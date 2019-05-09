@@ -68,11 +68,15 @@ body{
 	margin-top:70px;
 	width:250px;
 }
+.list-group,.list-group-item{
+	background-color:#B3E3B5;
+	border:none;
+}
 .profile-details{
 	width:500px;
 	padding-top: 100px;
 	background-color:#B3E3B5;
-	color:#ffffff;
+	color:black;
 	border-radius: 10px;
 	
 	z-index: -1;
@@ -121,7 +125,7 @@ body{
 
 }
 /* ========== Contact page ======= */
-.contact{
+.contact,.projects{
 	margin-top: 20px;
 }
 /* ======== universal ========= */
@@ -152,10 +156,85 @@ body{
 	margin-bottom:40px;
 }
 
+/* =========  Portfolio ======== */
+.proj-desc{
+	background-color:#48484A;
+	color:#ffffff;
 
 
+}
 
 
+/* ======== image text overlay effect =========== */
+.image-wrapper {
+  position: relative;
+  
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition:all .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+
+}
+.middle a{
+	text-decoration: none;
+}
+
+.image-wrapper:hover .image {
+  opacity: 0.3;
+}
+
+.image-wrapper:hover .middle {
+  opacity: 0.8;
+  border-radius: 10px;
+  background-color:black;
+}
+.project-section:hover{
+	border:2px solid #ffffff;
+}
+.text {
+ 
+  color: #ffffff;
+  font-weight:bold;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+/* ==== effect end ===== */
+/* === making image gallery same width and height ====== */
+.image-wrapper img{
+	width:100%;
+	height:100%;
+	object-fit: contain;
+	background-position: center;
+}
+.project-section{
+	height:146px;
+	background-color:black;
+}
+.image-wrapper{
+	width:100%;
+	height:100%;
+}
+.proj-desc{
+	height:50px;
+}
+
+/* =====image gallery end ====== */
 
 
 
