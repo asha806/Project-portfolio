@@ -57,6 +57,9 @@ body{
 /*.navbar-light a{
 	color:#ffffff;
 }*/
+.brand-name{
+
+}
 .navigation a{
 	color:#ffffff;
 }
@@ -64,7 +67,7 @@ body{
 	color:#B3E3B5;
 }
 
-.active a{
+.active a,.brand-name{
 	color:#FB9985;
 }
 .background-color-section{
