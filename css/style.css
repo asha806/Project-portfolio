@@ -87,10 +87,13 @@ background-color:#B3E3B5;
 }*/
 .hero{
 	background: linear-gradient(#ff9966,#ff5e62);
+	background:url("../images/try4free.jpg") no-repeat fixed;
+	background-size: cover;
 }
 .hero img{
 	width:250px;
 	border:2px solid #ffffff;
+
 }
 .list-group,.list-group-item{
 
