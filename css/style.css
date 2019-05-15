@@ -107,34 +107,23 @@ background-color:#B3E3B5;
 	
 
 }
+/*------About ------*/
+
+.about-me{
+	margin-left: -15px;
+	margin-right: -15px;
+}
+.about-me p,.skills{
+	padding-left: 15px;
+	padding-right: 15px;
+}
 
 /* ======== skills ======== */
 .color-gray{
 	background: #D3D3D3;
 }
-.details{
-	display:flex;
 
-	 -webkit-column-gap: 20px;
-     -moz-column-gap: 20px;
-          column-gap: 20px;
 
-}
-.details div{
-	flex:1 1 0;
-	padding:15px;
-}
-.skills,.about-me{
-	margin-left: -15px;
-	margin-right: -15px;
-}
-.about-me p{
-	padding-left: 15px;
-	padding-right: 15px;
-}
-.web-design, .web-dev{
-	text-align:center;
-}
 /*.skills-heading{
 	border-bottom:1px solid black;
 }*/
@@ -142,7 +131,7 @@ background-color:#B3E3B5;
 .style-hr {
 				border: 0;
 				height: 1px;
-				width:190px;
+				width:300px;
 				background: #333;
 				background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);
 				background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);
@@ -202,6 +191,9 @@ background-color:#B3E3B5;
 .btn-submit{
 	background-color:#FB9985;
 }
+.contact{
+	margin-bottom: 10px;
+}
 
 /* =========  Portfolio ======== */
 .proj-desc{
@@ -209,9 +201,6 @@ background-color:#B3E3B5;
 	color:#ffffff;
 
 
-}
-.contact{
-	margin-bottom: 10px;
 }
 
 
@@ -225,7 +214,7 @@ background-color:#B3E3B5;
   opacity: 1;
   display: block;
   width: 100%;
-  height: auto;
+  
   transition: .5s ease;
   backface-visibility: hidden;
 }
