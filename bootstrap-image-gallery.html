@@ -1,4 +1,83 @@
 <!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <style type="text/css">
+        
+        .portfolio-section [class*='col-']{
+          
+            display:flex;
+            flex-direction: column;
+            
+           
+        }
+        .portfolio-section img{
+            border:1px solid black;
+            height:200px;
+        }
+        .img-caption{
+             border:1px solid black;
+             flex:1 1 0;
+             margin-bottom: 5px;
+        }
+        .portfolio-section img{
+            
+            object-fit: contain;
+            background-color:black;
+        }
+        /*------- image overlay effect----*/
+        .image-wrapper {
+          position: relative;
+          
+        }
+
+        .image {
+          opacity: 1;
+          display: block;
+          width: 100%;
+          
+          transition: .5s ease;
+          backface-visibility: hidden;
+        }
+
+        .middle {
+          transition:all .5s ease;
+          opacity: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          text-align: center;
+
+        }
+        .middle a{
+            text-decoration: none;
+        }
+
+        .image-wrapper:hover .image {
+          opacity: 0.3;
+        }
+
+        .image-wrapper:hover .middle {
+          opacity: 0.8;
+          border-radius: 10px;
+          background-color:black;
+        }
+        .text {
+          color: #ffffff;
+          font-weight:bold;
+          font-size: 16px;
+          padding: 16px 32px;
+        }
+        /*----- effect end -----*/       
+
+
+    </style>
+</head>
+<body>
+	<!doctype html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -6,61 +85,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <!--Google font--->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <!--font Awesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
-    <title>PORTFOLIO PAGE| PORTFOLIO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
   </head>
   <body>
-      <nav class="navbar navbar-expand-md">
-
-      
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="rounded-circle" width="80px" alt="logo-image"><span class="brand-name pl-2">Creative Design<span></a>
-        <button class="navbar-toggler bg-light navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navigation collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto ">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about-me.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="skills.html">Skills</a>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-     
-      <div class="container-fluid background-color-section">
-      <div class="row portfolio portfolio-section">
-        <div class="col-sm-12">
-          <div>
-                <h2 class="text-center section-heading">Portfolio</h2>
-                <div class="font-icon-middle">
-                  <span class="outer-line"></span>
-                  <span class="fa fa-star" style="padding-left:10px;padding-right: 10px;" aria-hidden="true"></span>
-                  <span class="outer-line"></span>
-                </div>
-          </div>
-        </div><!--col-->
-        <div class="col-sm-3">
+    <div class="container background-color-section">
+        <h2 class="text-center">Portfolio</h2>
+    	<div class="row portfolio portfolio-section">
+    		<div class="col-sm-3">
                 <a href="https://asha806.github.io/project-bootstrap/">
                     <div class="image-wrapper">
-                  <img class="image img-fluid" src="images/blvd.png" alt="">
+        			    <img class="image img-fluid" src="images/blvd.png" alt="">
                         <div class="middle">
                             <div class="text">
                                 Demo
@@ -68,10 +104,10 @@
                         </div><!--middle div-->
                     </div><!--img-wrapper div-->
                 </a>
-          <div class="img-caption">
-            This is image caption
-          </div><!---image-caption div ---> 
-        </div> <!---col div--->
+    			<div class="img-caption">
+    				This is image caption
+    			</div><!---image-caption div ---> 
+    		</div> <!---col div--->
             <div class="col-sm-3">
                 <a href="https://asha806.github.io/project-Getty-Museum/">
                     <div class="image-wrapper">
@@ -202,32 +238,20 @@
                             </div>
                         </div><!--middle div-->
                         </div><!--img-wrapper div-->
-                </a>
+                   </a>
                 <div class="img-caption">
                         This is image caption
                 </div><!---image-caption div ---> 
             </div> <!---col div--->
-        
-      </div><!---row div-->
+    	</div><!---row div-->
     </div><!--container div-->
 
-          <footer class="footer">
-            <div class="d-flex justify-content-center align-items-center">
-              <a href="#"><i class="mr-3 fa fa-facebook"></i></a>
-              <a href="#"><i class="mr-3 fa fa-twitter"></i></a>
-              <a href="#"><i class="mr-3 fa fa-linkedin"></i></a>
-              <a href="#"><i class="mr-3 fa fa-google-plus"></i></a>
-              <a href="#"><i class="fa fa-skype"></i></a>
-            </div>
-          </footer>
-       
-   
-
-
- 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
- 
+</html>
+</body>
 </html>
